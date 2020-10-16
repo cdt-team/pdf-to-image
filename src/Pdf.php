@@ -41,7 +41,7 @@ class Pdf
 
     public function setBox(string $box): self
     {
-        $this->ghostscript->setBox($box);
+        $this->ghostscript->useBox($box);
         return $this;
     }
 
